@@ -1,0 +1,517 @@
+:root{
+    --mainColor:#20C997;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.whole-app{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    background-color: #111418;
+    position: fixed;
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.side-content{
+    margin-left: 12px;
+    margin-top: 20px;
+}
+.sidebar img{
+    margin-top: 10px;
+    width: 9em;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    border: 7px solid #3b3737;
+}
+.sidebar .myName{
+    color: white;
+    font-size: 17px;
+    margin-left: auto;
+    font-family: poppins;
+    font-weight: bold;
+}
+.side-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+.side-content ul li{
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.side-content ul li a{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-size: 15px;
+    font-family: poppins;
+}
+ul li a:hover{
+    color: var(--mainColor);
+}
+.whole-content{
+    display: flex;
+    height: 100%;
+    width: 85%;
+    flex-direction: column;
+    margin-left: 15%;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+}
+.banner{
+    width: 90%;
+    background-color: var(--mainColor);
+    height: 100%;
+    z-index: -1;
+}
+.home-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.my-profile{
+    margin-left: -5%;
+    margin-top: 3.5%;
+    height: 10%;
+    width: 45%;
+    margin-right: 6em;
+}
+.my-profile img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.main-home{
+    display: flex;
+    flex-direction: column;
+}
+.main-home .welcome{
+    font-weight: bolder;
+    font-size: 2.3em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    /* margin-top: 4%; */
+    padding-top: 4%;
+    padding-left: 20%;
+    /* margin-left: 20%; */
+}
+.main-home .my-job{
+    color: white;
+    font-size: 1.9em;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 2%;
+    padding-left: 6%;
+}
+.main-home .based{
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+    padding-top: 2%;
+    padding-left: 20%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.socials{
+    padding-top: 2%;
+    padding-left: 20%;
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-left: 20%;
+}
+.contacts .social-link{
+    /* color: white; */
+    font-size: 1em;
+    /* padding: 0px 10px; */
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border: none;
+    margin-right: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.social-link:hover{
+    color: white;
+    background-color: blue;
+}
+.hire-me{
+    display: flex;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-bottom: 4em;
+}
+.hire{
+    margin-right: 11em;
+}
+.hire,.download{
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 2em;
+    width: 120px;
+    cursor: pointer;
+    height: 35px;
+}
+.hire a,.download a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.download{
+    background-color: black;
+    border: none;
+}
+.quote{
+    margin-top: 2em;
+    margin-left: 42%;
+    width: 300px;
+}
+.quote p{
+    color: white;
+    font-size: 14px;
+    font-family: poppins;
+}
+.login{
+    margin-left: 12em;
+    padding-top: 10px;
+}
+.login button{
+    padding: 7px 40px;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+    background-color: transparent;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+.about-main{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2%;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.header h1{
+    color: #656565;
+    font-size: 2em;
+    font-weight: 700;
+}
+.underline{
+    width: 6em;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin-left: 3.5em;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    width: 100%;
+}
+.about-content .bio{
+    width: 60%;
+    /* margin-left: 1%; */
+}
+.bio .myName{
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4C4D4D;
+}
+.myName span{
+    color: var(--mainColor);
+    margin-left: 1px;
+    font-size: 1.3em;
+}
+.bio-content{
+    display: flex;
+    flex-direction: column;
+}
+.bio-content div{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: poppins;
+    color: #4C4D4D;
+
+}
+.my-summary{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4%;
+
+}
+.my-summary .name{
+    display: flex;
+    flex-direction: row;
+}
+.name .key{
+    font-weight: 900;
+    font-family: poppins;
+    font-size: 17px;
+    color: #3b3737;
+}
+.name .value{
+    color: #4C4D4D;
+    font-weight: 400;
+    font-family: poppins;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.name:nth-child(2) .value{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    width: 100%;
+}
+ .desc .divider{
+    display: block;
+    background-color: #c4c4c4;
+    height: 1px;
+    width: 100%;
+}
+.desc .cv-down{
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-size: 15px;
+    font-family: poppins;
+    width: 67%;
+    padding: 10px 0px;
+    text-align: center;
+}
+.about-exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 2%;
+}
+.about-exp .exp{
+    display: flex;
+}
+.exp .divider{
+    height: 100%;
+    width: 1px;
+    background-color: #4C4D4D;
+    margin-left: 10px;
+}
+.exp .text{
+    display: flex;
+    flex-direction: column;
+}
+.exp .text h2{
+    color: #4C4D4D;
+    font-size: 2.5em;
+    margin: auto;
+}
+.exp .text h4{
+    font-size: 1.2em;
+    color: #4C4D4D;
+    font-family: poppins;
+    font-weight: 500;
+}
+.skills-page{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F9FA;
+}
+.skills-page .underline{
+    width: 75px;
+    margin-left: 25%;
+}
+.skills-page .content{
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content .row{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 45%;
+}
+.service .icon{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgb(192, 185, 185);
+    border: none;
+}
+.icon i{
+    color: var(--mainColor);
+    font-size: 1.4em;
+    margin: auto;
+}
+.service .text{
+    margin-left: 12px;
+    margin-top: -5px;
+}
+.service .text h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #252b33;
+    font-family: poppins;
+}
+.service .text p{
+    font-size: 0.9em;
+    font-family: poppins;
+    color: #4C4D4D;
+}
+.resume{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2%;
+}
+.resume .underline{
+    width: 3.2em;
+    margin-left: 2.2em;
+}
+.resume .achieved{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+.achieved .head{
+    font-size: 1.2em;
+    font-family: poppins;
+    font-weight: 600;
+    color: #252b33;
+}
+.achieved .experience{
+    margin-left: 6em;
+}
+.achieved .education{
+    margin-bottom: 12px;
+    width: 50%;
+}
+.education .desc{
+
+    border: 1px solid #c4c4c4;
+    margin-bottom: 12px;
+    width: 100%;
+    border-radius: 2px;
+}
+.education .desc .content{
+    margin: 1em;
+}
+.education .desc .date{
+    background-color: var(--mainColor);
+    width: 100px;
+    height: 23px;
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+}
+.desc .date p{
+    /* margin: 15px; */
+    color: white;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 12px;
+    
+}
+.desc .major{
+    font-size: 1.2em;
+    color: #252b33;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: 2px;
+}
+.desc .school{
+    color: #dc3545;
+    font-family: poppins;
+    margin-bottom: 1.2em;
+}
+.desc .intro{
+    font-size: 0.9em;
+    font-family: poppins;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.skills .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills .head{
+    font-size: 1.2em;
+    font-family: poppins;
+    font-weight: 600;
+    color: #252b33;   
+}
+.skill{
+    margin-top: 12px;
+    width: 45%;
+}
+.skill .text{
+    display: flex;
+    justify-content: space-between;
+}
+.skill .text{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: poppins;
+    color: #252b33;
+}
+.progress{
+    height: 10px;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 30px;
+}
+.progressing{
+    width: 50%;
+    background-color: var(--mainColor);
+    border-radius: 30px;
+    height: 100%;
+}
