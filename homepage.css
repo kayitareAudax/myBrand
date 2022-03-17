@@ -539,7 +539,220 @@ ul li a:hover{
     border-radius: 30px;
     height: 100%;
 }
-@media only screen and (max-width:600px){
+.portfolio{
+    margin-top: 5%;
+    width: 100%;
+    /* background-color: red; */
+    background-color: var(--rightGray);
+    display: flex;
+    flex-direction: column;
+    
+}
+.portfolio .underline{
+    width: 50%;
+    margin-left: 25%;
+}
+.portfolio .minor-header{
+    display: flex;
+    margin: auto;
+    margin-top: 2em;
+}
+.portfolio .minor-header .active{
+    text-decoration: none;
+    font-size: 16px;
+    color: #4C4D4D;
+    padding-right: 15px;
+}
+.minor-header .active .underline{
+    width: 150%;
+    margin-left: -4px;
+}
+.minor-header .active a{
+    font-size: 1.2em;
+}
+.portfolio .projects{
+    margin-left: 2%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.projects .project{
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    /* background-color: red; */
+    background-color: white;
+    margin-right: 50px;
+    height: 70vh;
+    box-shadow: 1px 2px 4px gray;
+    border: none;
+}
+.project .image{
+    height:70%;
+    width: 100%;
+}
+.image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.project .text-holder{
+    background-color: var(--mainColor);
+    border-radius: 283px 0 0 0;
+    width: 100%;
+    height: 30%;
+}
+.projects .next{
+    margin: auto;
+    color: var(--mainColor);
+    font-size: 2em;
+}
+.project .text-holder .text{
+    margin-left: 20%;
+    margin-top: 12%;
+}
+.text-holder .text .key-value{
+    display: flex;
+    color: white;
+}
+.text .key-value .key{
+    font-size: 1em;
+    font-family: poppins;
+}
+.text .key-value p{
+    font-size: 0.8em;
+    font-family: poppins;
+    /* margin-left: 5px; */
+    margin: auto 6px;
+}
+.contact-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5%;
+    background-color: var(--rightGray);
+}
+.contact-page .underline{
+    margin-left: 20%;
+}
+.contact-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    margin-top:2%;
+}
+.contact-page .address{
+    width: 30%;
+    color: #4C4D4D;
+}
+.contact-content .address h2{
+    font-size: 1.2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 12px;
+}
+.address .house{
+    font-family: poppins;
+    font-size: 1em;
+}
+.address .road{
+    font-family: poppins;
+    font-size: 1em;
+}
+.address .city{
+    font-size: 1.1em;
+    font-family: poppins;
+}
+.address .call-me{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.call-me .phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.phone span{
+    font-size: 1.2em;
+    color: var(--mainColor);
+}
+.phone p{
+    /* margin: auto; */
+    margin-left: 12px;
+    font-family: poppins;
+}
+.follow-me{
+    display: flex;
+    flex-direction: row;    
+}
+.follow-me span{
+    font-size: 1.1em;
+    margin-right: 1em;
+}
+.contact-form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    color: #4C4D4D;
+}
+.contact-form h2{
+    font-size: 1.2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 12px;
+}
+form .form-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.form-input input{
+    width: 45%;
+    height: 45px;
+    /* background-color: var(--rightGray); */
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 2px;
+    outline: none;
+    text-indent: 12px;
+}
+.form-input input::placeholder{
+    font-size: 1em;
+    font-family: poppins;
+    color: rgb(190, 185, 185);
+}
+form textarea{
+    margin-top: 12px;
+    width: 100%;
+    height: 90px;
+    border-radius: 2px;
+    border: 1px solid rgb(216, 215, 215);
+    color: #4C4D4D;
+    text-indent: 12px;
+}
+form textarea::placeholder{
+    color: rgb(190, 185, 185);
+    font-size: 1em;
+    font-family: poppins;
+}
+.send{
+    display: block;
+    /* margin-top: 12px; */
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--mainColor);
+    text-align: center;
+    font-size: 1.1em;
+    font-family: poppins;
+    color: white;
+}
+@media only screen and (max-width:900px){
     
     body{
         box-sizing: border-box;
@@ -671,6 +884,16 @@ ul li a:hover{
     flex-direction: column;
 }
 .col .skill{
+    width: 97%;
+}
+.projects{
+    display: flex;
+    flex-direction: column !important;
+}
+.projects .next{
+    display: none;
+}
+.projects .project{
     width: 97%;
 }
 }
