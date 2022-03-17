@@ -1,5 +1,6 @@
 :root{
     --mainColor:#20C997;
+    --rightGray:#F8F9FA;
 }
 
 *{
@@ -41,6 +42,9 @@
     font-family: poppins;
     font-weight: bold;
 }
+.side-content .bars{
+    display: none;
+}
 .side-content ul{
     list-style: none;
     display: flex;
@@ -56,6 +60,20 @@
     color: #c4c4c4;
     font-size: 15px;
     font-family: poppins;
+}
+.side-content .social-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.3em;
+    margin-left: 10px;
+}
+.side-content .social-media span{
+    color: #656565;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.social-media span:hover{
+    color: var(--mainColor);
 }
 ul li a:hover{
     color: var(--mainColor);
@@ -73,7 +91,7 @@ ul li a:hover{
 }
 .banner{
     width: 90%;
-    background-color: var(--mainColor);
+    background-color: var(--rightGray);
     height: 100%;
     z-index: -1;
 }
@@ -103,14 +121,14 @@ ul li a:hover{
     font-weight: bolder;
     font-size: 2.3em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: #4C4D4D;
     /* margin-top: 4%; */
     padding-top: 4%;
     padding-left: 20%;
     /* margin-left: 20%; */
 }
 .main-home .my-job{
-    color: white;
+    color: #4C4D4D;
     font-size: 1.9em;
     font-weight: 900;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -120,7 +138,7 @@ ul li a:hover{
 .main-home .based{
     font-size: 1em;
     font-weight: 600;
-    color: white;
+    color: #4C4D4D;
     padding-top: 2%;
     padding-left: 20%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -132,7 +150,7 @@ ul li a:hover{
     padding-left: 20%;
     font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
+    color: #4C4D4D;
 }
 .contacts{
     display: flex;
@@ -151,11 +169,11 @@ ul li a:hover{
     text-align: center;
     border: none;
     margin-right: 10px;
-    background-color: white;
+    background-color: #000;
     cursor: pointer;
 }
 .social-link:hover{
-    color: white;
+    color: #4C4D4D;
     background-color: blue;
 }
 .hire-me{
@@ -169,7 +187,7 @@ ul li a:hover{
 }
 .hire,.download{
     background-color: transparent;
-    border: 1.5px solid white;
+    border: 1.5px solid #20C997;
     border-radius: 2em;
     width: 120px;
     cursor: pointer;
@@ -177,12 +195,13 @@ ul li a:hover{
 }
 .hire a,.download a{
     text-decoration: none;
-    color: white;
+    color: #4C4D4D;
     font-weight: bold;
 }
 .download{
-    background-color: black;
+    background-color: var(--mainColor);
     border: none;
+    color: white !important;
 }
 .quote{
     margin-top: 2em;
@@ -190,7 +209,7 @@ ul li a:hover{
     width: 300px;
 }
 .quote p{
-    color: white;
+    color: #4C4D4D;
     font-size: 14px;
     font-family: poppins;
 }
@@ -214,6 +233,7 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     width: 95%;
+    
     margin-left: 2%;
 }
 .header{
@@ -264,6 +284,7 @@ ul li a:hover{
 
 }
 .my-summary{
+    width: 40%;
     display: flex;
     flex-direction: column;
     margin-left: 4%;
@@ -295,6 +316,7 @@ ul li a:hover{
     flex-direction: column;
     padding-bottom: 12px;
     width: 100%;
+
 }
  .desc .divider{
     display: block;
@@ -302,14 +324,15 @@ ul li a:hover{
     height: 1px;
     width: 100%;
 }
-.desc .cv-down{
+ .cv-down{
     background-color: var(--mainColor);
     border: none;
     border-radius: 2em;
     color: white;
     font-size: 15px;
     font-family: poppins;
-    width: 67%;
+    width: 40%;
+    margin-top: 12px;
     padding: 10px 0px;
     text-align: center;
 }
@@ -388,6 +411,7 @@ ul li a:hover{
 .service .text{
     margin-left: 12px;
     margin-top: -5px;
+    color: #4C4D4D;
 }
 .service .text h2{
     font-size: 20px;
@@ -514,4 +538,139 @@ ul li a:hover{
     background-color: var(--mainColor);
     border-radius: 30px;
     height: 100%;
+}
+@media only screen and (max-width:600px){
+    
+    body{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        /* position: absolute; */
+    }
+    .sidebar{
+        height:6%;
+        width: 99%;
+        background-color: #111418;
+    }
+    .sidebar .side-content{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 20px !important;
+        width: 100%;
+    }
+    .side-content img{
+        display: none;
+    }
+    .side-content ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .myName{
+        margin-left: 10px !important;
+        font-size: 1em !important;
+        font-weight: 700;
+    }
+    .social-media{
+        margin-top: 4px !important;
+        margin-left: 2.2em !important;
+    }
+    .social-media i{
+        font-size: 1em;
+        margin-right: 4px;
+    }
+    .menu{
+        display: block;
+    }
+    .hire:nth-child(1){
+        margin-right: 10%;
+    }
+    .menu i{
+        color: white;
+        font-size: 2em;
+        margin-left: 1em;
+    }
+    .whole-app{
+        width: 100% !important;
+        margin-right: 0;
+        /* background-color: red; */
+    }
+    .whole-content{
+        margin-top: 12%;
+        margin-left: 1% !important;        
+        width: 99% !important;
+    }
+    .home{
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .banner{
+        width: 100%;
+    }
+    .quote{
+        overflow: auto;
+        margin-left: 0%;
+        width: 100% !important;
+    }
+.my-profile{
+    display: none !important;
+    margin-right: 0 !important;
+}
+.main-home .welcome{
+    font-size: 2em;
+}
+.main-home .my-job{
+    font-size: 1.2em;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+}
+.about-content .bio{
+    width: 100%;
+    flex-wrap: wrap-reverse;
+}
+.about-content .my-summary{
+    margin-left: 0px;
+    width: 98%;
+}
+.skills-page .content{
+    display: flex;
+}
+.skills-page .content .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.content .row .service{
+    width: 97%;
+}
+.resume{
+    width: 97%;
+}
+.achieved{
+    display: flex;
+    flex-direction: column !important;
+}
+.achieved .education{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+}
+.achieved .experience{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    margin-left: 0;
+}
+.skills .col{
+    display: flex;
+    flex-direction: column;
+}
+.col .skill{
+    width: 97%;
+}
 }
