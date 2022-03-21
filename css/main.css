@@ -294,7 +294,7 @@ iframe {
   height: 50px;
   background-color: #20C997;
   border-radius: 25px;
-
+  text-decoration: none;
   font-family: SourceSansPro-SemiBold;
   font-size: 14px;
   color: #fff;
@@ -305,21 +305,22 @@ iframe {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-
+/* 
   box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
   -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
   -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
   -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.5); */
 }
 
 .login100-form-btn:hover {
-  background-color: #4b2354;
-  box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  background-color: #111418;
+  /* box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -moz-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -webkit-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
   -o-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
-  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8);
+  -ms-box-shadow: 0 10px 30px 0px rgba(189, 89, 212, 0.8); */
+  color: white;
 }
 
 
