@@ -160,7 +160,7 @@ ul li a:hover{
     padding-left: 20%;
 }
 .contacts .social-link{
-    /* color: white; */
+    color: white;
     font-size: 1em;
     /* padding: 0px 10px; */
     border-radius: 50%;
@@ -738,6 +738,9 @@ form textarea::placeholder{
     font-size: 1em;
     font-family: poppins;
 }
+.address .address-content{
+    width: 100%;
+}
 .send{
     display: block;
     /* margin-top: 12px; */
@@ -895,5 +898,35 @@ form textarea::placeholder{
 }
 .projects .project{
     width: 97%;
+}
+.contact-content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.contact-content .address{
+    margin-left: 30%;
+    /* background-color: black; */
+    width: 100%;
+}
+.address h2{
+    margin-left: 12px;
+}
+.address .address-content{
+    width: 100%;
+    margin-right: 3em;
+}
+.contact-form{
+    width: 100%;
+}
+.contact-form .form-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-input input{
+    width: 95%;
+    margin-bottom: 12px;
+}
+.contact-form textarea{
+    width: 95%;
 }
 }
