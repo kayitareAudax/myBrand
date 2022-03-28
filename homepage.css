@@ -214,15 +214,19 @@ ul li a:hover{
     font-family: poppins;
 }
 .login{
-    margin-left: 12em;
+    margin-left: -24px;
     padding-top: 10px;
 }
-.login button{
+.menu {
+    display: none;
+}
+.login a{
     padding: 7px 40px;
     color: var(--mainColor);
     border: 1px solid var(--mainColor);
     background-color: transparent;
     cursor: pointer;
+    text-decoration: none;
 }
 .login button:hover{
     background-color: var(--mainColor);
