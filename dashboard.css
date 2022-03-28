@@ -17,13 +17,124 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #F8F9FA;
 }
 .upnav{
     width: 100%;
     height: 50px;
     box-shadow: 2px 2px 2px gray;
+}
+.upnav .nav-content{
+    width: 100%;
+    height: 100%;
     display: flex;
-
+    margin-top: 20px;
+    margin-left: 5px;
+    justify-content: space-between;
+}
+.upnav .input{
+    line-height: 50px;
+    height: 60%;
+    width: 200px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    /* margin: 10px 5px; */
+    text-indent: 20px;
+    background-color: #e7e9eb;
+}
+.upnav .search{
+    color: black;
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: -30px;
+    color: var(--grayLike);
+}
+.upnav .new{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4%;
+    width: 20%;
+    margin-top: 2px;
+}
+.new{
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 10px; */
+}
+.new .cirlce{
+    background-color: var(--mainColor);
+    height: 50%;
+    text-align: center;
+    padding: 2px 5px;
+}
+.new i{
+    color: white;
+    font-size: 1em;
+}
+.new a{
+    color: var(--mainColor);
+    /* margin-top: 10px; */
+    width: 100%;
+    text-decoration: none;
+}
+.not-mes{
+    display: flex;
+    width: 4%;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+.me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.not-mes{
+    
+    flex-direction: row;
+}
+.not-mes .notification{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.notification i{
+    color: var(--grayLike);
+    font-size: 1em;
+}
+.notification .circle{
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    /* height: 100%; */
+    width: 100%;
+    padding: 2px 5.5px;
+    position: absolute;
+    bottom: 45px;
+    left: 10px;
+}
+.notification .circle p{
+    font-size: 0.6em;
+    color: white;
+}
+.profile{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.profile img{
+    width: 2em;
+    height: 2em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.profile p{
+    font-size: 0.7em;
+    color: var(--grayLike);
+    margin-top: 17px;
+    margin-left: 3px;
 }
 .dashboard-content{
     display: flex;
@@ -173,39 +284,77 @@ body{
 .mapped p{
     font-size: 0.8em;
 }
-.countries{
+.visitors{
+    display: flex;
+    width: 95%;
+    margin-top: 1em;
+}
+.visitors .map{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
-    margin-top: 40px;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 1px;
 }
-.countries .country{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 10px;
-}
-.country .content{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.country img{
-    margin-left: 8px;
-    width: 4%;
-    height: 14px;
-    object-fit: cover;
-    margin-top: 7px;
-}
-.country p{
+.map p{
     font-size: 1em;
-    color: #949696;
+    color: var(--grayLike);
+    margin: 10px;
 }
-.country .divider{
+.map .image{
     width: 100%;
-    height: 1px;
-    background-color: #949696;
-    display: block;
+}
+.map .image img{
+    width: 100%;
+    object-fit: cover;
+}
+.visitors .statistics{
+    width: 40%;
+    background-color: #fff;
+    margin-left: 3px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.statistics .country{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1em;
+}
+.country .number{
+    font-size: 1em;
+    color: #1D2939;
+    font-family: poppins;
+    font-weight: bold;
+}
+.country .origin{
+    font-size: 0.7em;
+    color: var(--grayLike);
+}
+.bars{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+}
+.bars .percent{
+    margin-left: 93%;
+    color: var(--grayLike);
+    font-size: 0.7em;
+}
+.progress{
+    height: 5px;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-radius: 30px;
+}
+.progressing{
+    width: 90%;
+    background-color: #DC3545;
+    border-radius: 30px;
+    height: 100%;
+}
+.statistics:nth-child(1) .country .progress .progressing{
+    background-color: red;
 }

@@ -1,0 +1,251 @@
+:root{
+    --mainColor:#20C997;
+    --rightGray:#F8F9FA;
+    --likeBlack:#4C4D4D;
+    --grayLike:#949696;
+    --secondColor:#111418;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.create-main{
+    width: 100%;
+}
+.sidebar{
+    width: 15%;
+    background-color: var(--secondColor);
+    height: 100%;
+    position: fixed;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.sidebar .side-link{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.sidebar .header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 10px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+.sidebar .header i{
+    margin-left: 50%;
+}
+.header p{
+    font-size: 1em;
+    font-weight: bold;
+}
+.side-link i{
+    font-size: 1em;
+    color: white;
+    margin-right: 12px;
+    margin-top: 4px;
+}
+.side-link a{
+    text-decoration: none;
+    color: white;
+}
+.content{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+}
+.content .chat-menu{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #f9f9f9;
+    height: 100vh;
+}
+.chat-menu .profile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.profile img{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menu-content{
+    margin: 10px;
+}
+.me{
+    display: flex;
+    flex-direction: column;
+}
+.me .name{
+    font-weight: bold;
+    color: var(--mainColor);
+    font-size: 0.9em;
+    margin: auto 10px;
+}
+.me .title{
+    font-size: 0.7em;
+    color: var(--likeBlack);
+    margin-left: 5em;
+    margin-top: -5px;
+    font-weight: 700;
+}
+.search{
+    margin-top: 20px;
+}
+.search input{
+    width: 95%;
+    height: 33px;
+    border-radius: 20px;
+    border: none;
+    text-indent: 10px;
+}
+.user{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.user .profile{
+    display: flex;
+    flex-direction: row;
+}
+.user .profile .username{
+    margin: auto 10px;
+    color: var(--mainColor);
+    font-size: 1em;
+    max-width: 50%;
+}
+.user .profile .date{
+    margin: auto;
+    font-size: 0.5em;
+    color: var(--grayLike);
+}
+.user .message{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3.7em;
+    width: 70%;
+}
+.message .text{
+    max-width: 80%;
+    font-size: 0.7em;
+    color: var(--grayLike);
+    word-wrap: break-word;
+}
+.message .number{
+    background-color: var(--mainColor);
+    border-radius: 4px;
+    cursor: auto;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.5em;
+    height: 12px;
+    width: 12px;
+    text-align: center;
+}
+.user .divider{
+    height: 1px;
+    width: 100%;
+    background-color: var(--grayLike);
+}
+.chat-box{
+    width: 100%;
+}
+.chat-box .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px rgb(228, 219, 219);
+}
+.header .profile{
+    display: flex;
+    flex-direction: row;
+}
+.header .profile p{
+    font-size: 0.8em;
+    color: var(--likeBlack);
+    margin: auto;
+    font-weight: 500;
+}
+.header .profile .line{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    margin: auto 5px;
+}
+.messages{
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.messages .mes-message{
+    display: flex;
+    flex-direction: column;
+}
+.mes-img{
+    height: 3.5em;
+    width: 3.5em;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+.mes-message-top{
+    display: flex;
+    flex-direction: row;
+}
+.mes-message-top .mes-messageText{
+    background-color: #868686;
+    border-radius: 10px 0px 10px 0px;
+    color: white;
+    max-width: 40%;
+    padding: 5px 4px;
+    font-size: 14px;
+}
+.mes-message-bottom{
+    font-size: 0.7em;
+    margin-left: 5.5em;
+    opacity: 0.7;
+    /* margin-top: -5px; */
+} 
+.mes-message.own{
+    align-items: flex-end;
+}
+.mes-message.own .mes-messageText{
+    background-color: var(--mainColor);
+}
+.chat-box-bottom{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 20px;
+}
+.chat-box-bottom input{
+    width: 100%;
+    border: none;
+    background-color: var(--rightGray);
+    height: 2.5em;
+    outline: none;
+    text-indent: 12px;
+    border-radius: 4px;
+}
+.chat-box-bottom button{
+    height: 2.5em;
+    width: 100px;
+    background-color: var(--mainColor);
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+}
