@@ -13,7 +13,7 @@
 body{
     font-family: poppins;
 }
-.dashboard-main{
+.users-main{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -136,7 +136,7 @@ body{
     margin-top: 17px;
     margin-left: 3px;
 }
-.dashboard-content{
+.users-content{
     display: flex;
     flex-direction: column;
 }
@@ -188,177 +188,130 @@ body{
     display: flex;
     flex-direction: column;
 }
-.boxes{
+.members{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.members .header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .col1,.col2{
+    display: flex;
+}
+.col1 .all{
+    color: #9ec8de;
+    font-size: 1em;
+    margin: auto;
+}
+.col1 .date{
+    display: flex;
+    background-color: white;
+    padding: 2px 5px;
+    height: auto;
+    color: var(--grayLike);
+    font-size: 0.7em;
+    margin: auto 20px;
+}
+.date .end,.start{
+    margin-right: 10px;
+}
+.total{
+    margin: auto;
+    color: var(--grayLike);
+    font-size: 0.5em;
+}
+.col2{
+    margin: auto;
+}
+.col2 .filter{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 95%;
+    background-color: #ddf4ff;
+    padding: 2px 5px;
+    text-align: center;
+}
+.filter p{
+    font-size: 0.7em;
+    margin: auto;
+    color: #7fccf3;
+}
+.filter i{
+    font-size: 0.7em;
+    color: #7fccf3;
+    margin: auto 5px;
+}
+.download{
+    margin: auto 20px;
+    font-size: 1em;
+    color: var(--grayLike);
+}
+.td.active .icon{
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    color: white;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 1em;
+}
+.td.active .text{
+    margin: auto 10px;
 }
 
-.boxes .box{
-    background-color: #20C997;
-    display: flex;
-    width: 230px;
-    height: 100%;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-.boxes .box:nth-child(2){
-    background-color: #DC3545;
-}
-.boxes .box:nth-child(3){
-    background-color: #0866C6;
-}
-.boxes .box:nth-child(4){
-    background-color: #1D2939;
-}
-.box i{
-    font-size: 2em;
-    color: white;
-    margin-left: 12px;
-    margin-top: 15%;
-}
-.box .text{
-    margin: 10px;
+table{
     width: 100%;
+    background-color: white;
 }
-.box .text .title{
-    font-size: 0.8em;
-    color: white;
+thead,tbody{
+    border-bottom: 1px solid var(--grayLike);
 }
-.box .text .stats{
-    font-size: 1.9em;
-    color: white;
-}
-.box .text .comparison{
+table th{
+    color: var(--grayLike);
     font-size: 0.7em;
-    color: white;
-    
 }
-.graphs{
-    display: flex;
+th span{
+    margin-left: 10px;
+}
+td{
+    color: var(--grayLike);
+    font-size: 0.8em;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.table{
+    overflow-x: auto;
     margin-top: 20px;
     width: 100%;
 }
-.graphs .daily-views{
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-    height: 50vh;
-    width: 20%;
+.active i{
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    color: white;
+    padding: 3px 3px;
 }
-.mappings{
-    display: flex;
-    justify-content: space-between;
-}
-.mapped{
-    height: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-}
-.mapped .stick{
-    width: 4px;
-    height: 90px;
-    margin: auto;
-}
-.mapped .stick:nth-child(1){
-    
-    background-color: #20C997;
-}
-.mapped .stick:nth-child(2){
-    /* width: 4px; */
-    /* height: 90px; */
-    background-color: #DC3545;
-    /* margin: auto; */
-}
-.mapped .stick:nth-child(3){
-    height: 90px;
-    background-color: #DC3545;
-}
-.mapped .stick:nth-child(4){
-    width: 4px;
-    height: 90px;
-    background-color: #1D2939;
-    margin: auto;
-}
-.mapped p{
-    font-size: 0.8em;
-}
-.visitors{
-    display: flex;
-    width: 95%;
-    margin-top: 1em;
-}
-.visitors .map{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: #fff;
-    border-radius: 1px;
-}
-.map p{
-    font-size: 1em;
-    color: var(--grayLike);
-    margin: 10px;
-}
-.map .image{
-    width: 100%;
-}
-.map .image img{
-    width: 100%;
-    object-fit: cover;
-}
-.visitors .statistics{
-    width: 40%;
-    background-color: #fff;
-    margin-left: 3px;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: column;
-}
-.statistics .country{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 1em;
-}
-.country .number{
-    font-size: 1em;
-    color: #1D2939;
-    font-family: poppins;
-    font-weight: bold;
-}
-.country .origin{
-    font-size: 0.7em;
-    color: var(--grayLike);
-}
-.bars{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: -10px;
-}
-.bars .percent{
-    margin-left: 93%;
-    color: var(--grayLike);
-    font-size: 0.7em;
-}
-.progress{
-    height: 5px;
-    width: 100%;
-    background-color: #e2e2e2;
-    border-radius: 30px;
-}
-.progressing{
-    width: 90%;
-    background-color: #DC3545;
-    border-radius: 30px;
-    height: 100%;
-}
-.statistics:nth-child(1) .country .progress .progressing{
+.inactive i{
     background-color: red;
+    border-radius: 50%;
+    color: white;
+    padding: 3px 3px;
 }
-@media only screen and (max-width:700px){
+.fas.fa-ellipsis-h{
+    color: var(--mainColor);
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+tbody{
+    border: 2px solid red;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+  }
+  tr{
+      height: 60px;
+      padding-top: 10px;
+  }
+  @media only screen and (max-width:600px){
     .dashboard-main{
         width: 100vw;
     }
@@ -377,57 +330,5 @@ body{
     
     .side-link a{
         display: none;
-    }
-    .main-content{
-        margin-left: 10%;
-        width: 90%;
-    }
-    .content h5{
-        margin: auto;
-    }
-    .boxes .box{
-        width: 100%;
-    }
-    .upnav{
-        display: none;
-    }
-    .content{
-        width: 97%;
-    }
-    .box .stats{
-        font-size: 2.2em !important;
-    }
-    .box .comparison{
-        font-size: 1em !important;
-    }
-    .boxes{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .box i{
-        margin: auto 10px;
-    }
-    .box .title{
-        font-size: 1.2em !important;
-    }
-    .visitors{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .map{
-        width: 100% !important;
-    }
-    .map .image{
-        width: 100%;
-    }
-    .map .image img{
-        width: 100%;
-    }
-    .visitors .statistics{
-        margin-top: 15px;
-        width: 100%;
-    }
-
-}
+    }   
+  }

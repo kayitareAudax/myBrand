@@ -493,7 +493,7 @@ ul li a:hover{
     margin-bottom: 2px;
 }
 .desc .school{
-    color: #dc3545;
+    color: var(--mainColor);
     font-family: poppins;
     margin-bottom: 1.2em;
 }
@@ -702,6 +702,20 @@ ul li a:hover{
     display: flex;
     flex-direction: column;
     color: #4C4D4D;
+}
+.contact-form .validations{
+    background-color: #d9534f;
+    padding: 5px;
+    /* max-width: 45%; */
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: none;
+}
+.validations .message{
+    color: #fff;
+    text-align: center;
+    font-family: poppins;
 }
 .contact-form h2{
     font-size: 1.2em;

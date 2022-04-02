@@ -476,13 +476,16 @@
         </div>
         <div class="contact-form">
             <h2>SEND US A NOTE</h2>
+            <div class="validations" id="validation">
+                <p class="message" id="message"></p>
+            </div>
             <form action="">
                 <div class="form-input">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <input type="text" placeholder="E-mail address">
+                    <input type="text" name="" id="name" placeholder="Name">
+                    <input type="text" placeholder="E-mail address" id="email">
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                <button class="send">Send Message</button>
+                <textarea name="" id="comment" cols="30" rows="10" placeholder="Your message"></textarea>
+                <button class="send" onclick="validate(event)">Send Message</button>
             </form>
         </div>
     </div>
@@ -490,5 +493,6 @@
 </div>
 
 </div>
+<script src="./js/contact.js" defer></script>
 </body>
 </html>

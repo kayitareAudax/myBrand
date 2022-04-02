@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New blog</title>
     <link rel="stylesheet" href="create.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="create-main">
@@ -25,7 +21,7 @@
                 </div>
                 <div class="side-link">
                     <i class="fas fa-comment-alt"></i>
-                    <a href="./messages.css">Messages</a>
+                    <a href="./messages.html">Messages</a>
                 </div>
                 <div class="side-link">
                     <i class="fas fa-users"></i>
@@ -37,32 +33,47 @@
                 </div>
                 <div class="side-link">
                     <i class="fas fa-book"></i>
-                    <a href="./blog.html">see Blogs</a>
+                    <a href="./myBlogs.html">see Blogs</a>
                 </div>
             </div>
         </div>
         <div class="content">
+            <div class="main-content">
+            
             <div class="form">
-                <form action="">
-                    <div class="form-field">
-                        <input type="text" name="" id="" placeholder="Enter title">
+                <h4>Create new Blog</h4>
+                <div class="validations" id="validation">
+                    <p class="message" id="message"></p>
+                </div>
+                <form action="" method="post">
+                    <div class="field">
+                        <input type="text" name="title" id="title" placeholder="Enter title">
                     </div>
-                    <div class="form-field">
-                        <input type="text" name="" id="" placeholder="Enter title">
+                    <div class="field">
+                        <input type="text" name="details" id="details" placeholder="Enter additional metadata">
                     </div>
-                    <div class="form-field">
-                        <textarea type="text" name="" id="" placeholder="body of the blog">
+                    <div class="field">
+                        <textarea placeholder="Enter content of the blog" cols="12" rows="5" id="content"></textarea>
                     </div>
-                    <div class="category">
-                        <p>Choose category that applies</p>
-                        <input type="checkbox">Design
-                        <input type="checkbox">Lifestyle
-                        <input type="checkbox">Web development
-                        <input type="checkbox">Mobile development
+                    <div class="file-field" >
+                        <p>Choose image for blog</p>
+                        <label for="image"><i class="far fa-upload"></i></label><input type="file" name="image" id="image" class="file">
                     </div>
+                    <div class="tags">
+                        <p>Choose tags that apply</p>
+                        <div class="tag"><input type="checkbox" name="" id=""><span>Web development</span></div>
+                        <div class="tag"><input type="checkbox" name="" id=""><span>Web development</span></div>
+                        <div class="tag"><input type="checkbox" name="" id=""><span>Web development</span></div>
+                    </div>
+                    <button onclick="handleCreate(event)">Publish</button>
                 </form>
             </div>
+            <div class="svg">
+                <img src="./images/blogger.webp" alt="">
+            </div>
+        </div>
         </div>
     </div>
+    <script src="./js/createBlog.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,296 @@
+:root{
+    --mainColor:#20C997;
+    --rightGray:#F8F9FA;
+    --likeBlack:#4C4D4D;
+    --grayLike:#949696;
+    --mainFont:"Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.single-main{
+    display: flex;
+    width: 100%;
+}
+.single-main .single{
+    width: 60%;
+    margin-left: 5%;
+}
+.single .image{
+    width: 100%;
+    height: 50vh;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.single .text{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.single .text .title{
+    color: black;
+    font-size: 1.8em;
+    font-weight: 500;
+    word-wrap: break-word;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.text .writer{
+    margin-top: 2em;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+.writer img{
+    width: 13%;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.writer .desc{
+    display: flex;
+    flex-direction: column;
+    margin: auto 10px;
+}
+.desc .name{
+    font-size: 0.8em;
+    color: #000;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.desc .date{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    color: var(--grayLike);
+}
+.desc .date span{
+    margin-left: 10px;
+    color: var(--mainColor);
+}
+.content{
+    margin-top: 20px;
+}
+.content .article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+    color: #757575;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.comments p{
+    font-size: 1.1em;
+    color: #000;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.comments .comment{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.comment .profile{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 3em;
+}
+.comment .profile img{
+    width: 15%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment .profile .writer{
+    margin: auto 10px;
+    display: flex;
+    flex-direction: column;
+}
+.profile .writer .name{
+    color: #000;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.profile .writer .date{
+    text-transform: uppercase;
+    font-size: 0.7em;
+    color: var(--grayLike);
+}
+.comment .content{
+    margin-top: 5px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.comment .content .text{
+    font-size: 0.9em;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #757575;
+
+}
+.comment .content .reply{
+    margin-top: 5px;
+    border:none;
+    border-radius: 2px;
+    width: 10%;
+    color: white;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    height: 25px;
+    text-align: center;
+    background-color: var(--mainColor);
+}
+.comment .likes{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    margin-top: 10px;
+}
+.comment .likes span{
+    margin-right: 20px;
+    font-size: 0.7em;
+    font-family: "Cabin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.comment .likes span i{
+    font-size: 1em;
+    color: var(--mainColor);
+}
+.leave{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.leave textarea{
+    width: 90%;
+    height: 5em;
+}
+.leave label{
+    font-family: var(--mainFont);
+    color: #757575;
+    font-size: 0.9em;
+}
+.leave .comment-btn{
+    border-radius: 20px;
+    height: 2.6em;
+    width: 20%;
+    background-color: var(--mainColor);
+    font-family: var(--mainFont);
+    color: white;
+    text-align: center;
+    border: none;
+    margin: 10px 20px;
+}
+#error{
+    color: #d9534f;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.popular{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2.5em;
+}
+.popular .header{
+    margin-top: 10px;
+    width: 42%;   
+    margin-bottom: 10px;
+    margin: 10px auto;
+}
+.popular .header h2{
+    font-family: var(--mainFont);
+    color: #4C4D4D;
+    font-weight: 600;
+}
+.popular .blog{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+}
+.popular .blog .ranking{
+    width: 20%;
+}
+.popular .blog .ranking p{
+    color: #949696;
+    font-size: 4em;
+}
+.popular .blog .contents{
+    margin: 10px auto;
+}
+.blog .contents .title{
+    color: #000;
+    font-size: 1em;
+    font-family: var(--mainFont);
+    font-weight: 600;
+    text-decoration: none;
+}
+.blog .contents .writer{
+    color: #000;
+    font-size: 0.8em;
+    font-family: var(--mainFont);
+    font-weight: 400;
+    margin-top: 5px;
+}
+.blog .contents .date{
+    color: #949696;
+    font-size: 0.7em;
+    margin-top: 5px;
+
+}
+.contents .date .read{
+    color: var(--mainColor);
+    font-weight: 900;
+}
+.popular .more a{
+    color: var(--mainColor);
+    font-size: 1em;
+    margin-left: 30%;
+    text-decoration: none;
+}
+@media only screen and (max-width:700px){
+    .single-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .single-main .single{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .single .image{
+        width: 100%;
+        overflow: hidden;
+    }
+    .text .title{
+        font-size:1.2em !important;
+        margin: auto;
+    }
+    .text{
+        margin-left: 10px;
+    }
+    .text .writer{
+        width: 100%;
+    }
+    .body .article{
+        font-size: 0.9em;
+        font-family: poppins;
+    }
+    .leave .comment-btn{
+        width: 50%;
+        height: 3em;
+    }
+    .popular{
+        width: 100%;
+        margin-left: 0px;
+    }
+}
