@@ -10,7 +10,7 @@
     integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="dashboard.css">
-
+    <script src="./js/privateRoute.js" defer></script>
 </head>
 <body>
     <div class="dashboard-main">
@@ -22,25 +22,24 @@
                 </div>
                 <div class="links">
                     <div class="side-link">
-                        <i class="fab fa-windows"></i>
-                        <a href="">Dashboard</a>
+                        
+                        <a href=""><i class="fab fa-windows"></i><span class="text">Dashboard</span></a>
                     </div>
                     <div class="side-link">
-                        <i class="fas fa-comment-alt"></i>
-                        <a href="./messages.html">Messages</a>
+                        <a href=""><i class="fab fa-comment-alt"></i><span class="text">Messages</span></a>
                     </div>
                     <div class="side-link">
-                        <i class="fas fa-users"></i>
-                        <a href="">recent users</a>
+                        <a href=""><i class="fab fa-users"></i><span class="text">Recent users</span></a>
                     </div>
                     <div class="side-link">
-                        <i class="fas fa-edit"></i>
-                        <a href="./create.html">Create blog</a>
+                        <a href=""><i class="fab fa-edit"></i><span class="text">Create Blog</span></a>
                     </div>
                     <div class="side-link">
-                        <i class="fas fa-book"></i>
-                        <a href="./myBlogs.html">see Blogs</a>
+                        <a href=""><i class="fab fa-windows"></i><span class="text">My Blogs</span></a>
                     </div>
+                </div>
+                <div class="logout">
+                    <a href="./login.html"><span class="text">Logout</span></a>
                 </div>
             </div>
             <div class="main-content">
@@ -73,7 +72,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h5>Dashboard</h5>
+                    <h5 id="desk"></h5>
                 <div class="boxes">
                     <div class="box">
                         <i class="fas fa-globe"></i>

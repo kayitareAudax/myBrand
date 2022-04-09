@@ -773,6 +773,15 @@ form textarea::placeholder{
     font-family: poppins;
     color: white;
 }
+.copy{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.copy p{
+    font-size: 1.3em;
+    font-family: poppins;
+}
 @media only screen and (max-width:900px){
     
     body{
@@ -922,16 +931,19 @@ form textarea::placeholder{
     flex-direction: column-reverse;
 }
 .contact-content .address{
-    margin-left: 30%;
-    /* background-color: black; */
+    /* margin: auto; */
+    flex-wrap: wrap;
     width: 100%;
 }
 .address h2{
-    margin-left: 12px;
+    margin-top: 10px;
+    margin-left: 30%;
+}
+.address .content{
+    margin-left: 15%;
 }
 .address .address-content{
     width: 100%;
-    margin-right: 3em;
 }
 .contact-form{
     width: 100%;
@@ -946,5 +958,8 @@ form textarea::placeholder{
 }
 .contact-form textarea{
     width: 95%;
+}
+.copy p{
+    font-size: 1em;
 }
 }

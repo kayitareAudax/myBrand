@@ -328,7 +328,14 @@ th, td {
         margin: 0;
     }
     
-    .side-link a{
+    .side-link .text{
         display: none;
     }   
+    .main-content{
+        margin-left: 10%;
+    }
+    .members .header{
+        display: flex;
+        flex-direction: column;
+    }
   }

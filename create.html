@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>New blog</title>
     <link rel="stylesheet" href="create.css">
+    <script src="./js/privateRoute.js" defer></script>
 </head>
 <body>
     <div class="create-main">
@@ -16,24 +21,20 @@
             </div>
             <div class="links">
                 <div class="side-link">
-                    <i class="fab fa-windows"></i>
-                    <a href="">Dashboard</a>
+                    
+                    <a href=""><i class="fab fa-windows"></i><span class="text">Dashboard</span></a>
                 </div>
                 <div class="side-link">
-                    <i class="fas fa-comment-alt"></i>
-                    <a href="./messages.html">Messages</a>
+                    <a href=""><i class="fab fa-comment-alt"></i><span class="text">Messages</span></a>
                 </div>
                 <div class="side-link">
-                    <i class="fas fa-users"></i>
-                    <a href="">recent users</a>
+                    <a href=""><i class="fab fa-users"></i><span class="text">Recent users</span></a>
                 </div>
                 <div class="side-link">
-                    <i class="fas fa-edit"></i>
-                    <a href="./create.html">Create blog</a>
+                    <a href=""><i class="fab fa-edit"></i><span class="text">Create Blog</span></a>
                 </div>
                 <div class="side-link">
-                    <i class="fas fa-book"></i>
-                    <a href="./myBlogs.html">see Blogs</a>
+                    <a href=""><i class="fab fa-windows"></i><span class="text">My Blogs</span></a>
                 </div>
             </div>
         </div>
@@ -50,9 +51,9 @@
                         <input type="text" name="title" id="title" placeholder="Enter title">
                     </div>
                     <div class="field">
-                        <input type="text" name="details" id="details" placeholder="Enter additional metadata">
+                        <input type="text" name="details" id="details" placeholder="Enter additional details">
                     </div>
-                    <div class="field">
+                    <div class="text-field">
                         <textarea placeholder="Enter content of the blog" cols="12" rows="5" id="content"></textarea>
                     </div>
                     <div class="file-field" >

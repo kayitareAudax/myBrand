@@ -295,3 +295,52 @@
     margin: auto;
     color: #20C997;
 }
+@media only screen and (max-width:600px){
+    .dashboard-main{
+        width: 100vw;
+    }
+    .dashboard-content{
+        width: 100%;
+    }
+    .sidebar{
+        width: 9%;
+    }
+    .sidebar .header p{
+        display: none;
+    }
+    .sidebar .header i{
+        margin: 0;
+    }
+    .side-link .text{
+        display: none;
+    }
+    .main-content{
+        width: 90%;
+        margin-left: 10%;
+    }
+    .blogs .row{
+        display: flex;
+        flex-direction: column;
+        margin: 0px !important;
+    }
+    .row{
+        height: auto;
+    }
+    .row .blog{
+        width: 95%;
+        margin: 10px;
+    }
+    .blog .image{
+        width: 100%;
+        margin: 0;
+    }
+    .blog .text{
+        margin: 10px;
+    }
+    .upnav{
+        width: 100%;
+    }
+    .blog .edit{
+        margin-left: 70%;
+    }
+}
