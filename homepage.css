@@ -1,12 +1,14 @@
 :root{
     --mainColor:#20C997;
     --rightGray:#F8F9FA;
+    --grayLike:#949696;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .whole-app{
     width: 100%;
@@ -345,6 +347,7 @@ ul li a:hover{
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 2%;
+    flex-wrap: wrap;
 }
 .about-exp .exp{
     display: flex;
@@ -352,7 +355,7 @@ ul li a:hover{
 .exp .divider{
     height: 100%;
     width: 1px;
-    background-color: #4C4D4D;
+    background-color: var(--grayLike);
     margin-left: 10px;
 }
 .exp .text{
@@ -360,7 +363,7 @@ ul li a:hover{
     flex-direction: column;
 }
 .exp .text h2{
-    color: #4C4D4D;
+    color: var(--grayLike);
     font-size: 2.5em;
     margin: auto;
 }
@@ -550,7 +553,6 @@ ul li a:hover{
     background-color: var(--rightGray);
     display: flex;
     flex-direction: column;
-    
 }
 .portfolio .underline{
     width: 50%;
@@ -579,6 +581,7 @@ ul li a:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
+    width: 100%;
 }
 .projects .project{
     padding: 10px;
@@ -782,8 +785,7 @@ form textarea::placeholder{
     font-size: 1.3em;
     font-family: poppins;
 }
-@media only screen and (max-width:900px){
-    
+@media only screen and (max-width:700px){
     body{
         box-sizing: border-box;
         padding: 0;
@@ -792,14 +794,15 @@ form textarea::placeholder{
     }
     .sidebar{
         height:6%;
-        width: 99%;
+        width: 99% !important;
         background-color: #111418;
     }
     .sidebar .side-content{
         display: flex;
         flex-direction: row;
         padding: 0;
-        margin-top: 20px !important;
+        justify-content: space-between;
+        margin-top: 10px !important;
         width: 100%;
     }
     .side-content img{
@@ -812,14 +815,17 @@ form textarea::placeholder{
         margin: 0;
         display: none;
     }
+    .side-content .checkbox{
+        display: none;
+    }
     .myName{
-        margin-left: 10px !important;
+        /* margin-left: 10px !important; */
         font-size: 1em !important;
         font-weight: 700;
+        /* width: 100%; */
     }
     .social-media{
         margin-top: 4px !important;
-        margin-left: 2.2em !important;
     }
     .social-media i{
         font-size: 1em;
@@ -935,6 +941,17 @@ form textarea::placeholder{
     flex-wrap: wrap;
     width: 100%;
 }
+.checkbox:checked + .label{
+    color: red !important;
+}
+.checkbox:checked ~ .side-content{
+    display: flex;
+}
+.checkbox:checked + .sidebar{
+    background-color: red !important;
+    width: 100%;
+    height: 10em;
+}
 .address h2{
     margin-top: 10px;
     margin-left: 30%;
@@ -962,4 +979,39 @@ form textarea::placeholder{
 .copy p{
     font-size: 1em;
 }
+}
+@media only screen and (max-width:1100px){
+    *{
+        font-size: 1em;
+    }
+    .sidebar{
+        width: 20%;
+    }
+    .side-content{
+        margin-left: 0 !important;
+    }
+    .side-content ul li a{
+        font-size: 1.2em;
+        margin-left: 0px !important;
+    }
+    .sidebar .myName{
+        font-size: 15px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+    .projects{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .project{
+        width: 100% !important;
+    }
+    .whole-content{
+        margin-left: 20%;
+    }
+    .my-profile{
+        margin-left: 10px;
+        width: 100%;
+        margin-right: 0px;
+    }
 }

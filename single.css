@@ -11,13 +11,74 @@
     box-sizing: border-box;
     font-family: poppins;
 }
+.upnav{
+    width: 100%;
+    /* background-color: red; */
+    height: 60px;
+    box-shadow: 2px 2px 4px gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.upnav .logo{
+    width: 10%;
+    height: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.upnav .search{
+    line-height: 60px;
+    margin-left: 50px
+}
+.upnav .my-profile{
+    display: flex;
+    flex-direction: row;
+    margin-right: 12px;
+}
+.upnav .my-profile p{
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+}
+.upnav .image{
+    margin-top: 4px;
+    height: 90%;
+    width: 50px;
+}
+.upnav .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.search input{
+    width: 200px;
+    height: 30px;
+    background-color: #EEEFEF;
+    border-radius: 7px;
+    border: none;
+    text-indent: 20px;
+    outline: none;
+}
+.search input::placeholder{
+    font-size: 1em;
+    font-family: poppins;
+}
 .single-main{
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 .single-main .single{
     width: 60%;
     margin-left: 5%;
+}
+.single-content{
+    width: 100%;
+    display: flex;
 }
 .single .image{
     width: 100%;
@@ -292,5 +353,53 @@
     .popular{
         width: 100%;
         margin-left: 0px;
+    }
+    .single-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .upnav .logo{
+        width: 20%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .upnav .search{
+        margin-left: 10px;
+    }
+    .search input{
+        width: 150px;
+    }
+    .upnav .my-profile{
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width:700px){
+    .article{
+        font-size: 1.5em !important;
+    }
+    .comments .header p{
+        font-size: 1.7em;
+    }
+    .comment{
+
+        font-size: 1.5em !important;
+    }
+    .comment .profile{
+        width: 100%;
+        height: 5em;
+    }
+    .popular{
+        margin-left: 5px !important;
+        width: 40%;
+    }
+    .popular .header{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .popular .blog{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
 }

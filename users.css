@@ -13,6 +13,13 @@
 body{
     font-family: poppins;
 }
+.sidebar .logout{
+    margin-top: 100%;
+    margin-left: 10px;
+}
+.logout a{
+    color: white;
+}
 .users-main{
     display: flex;
     flex-direction: column;

@@ -180,6 +180,13 @@ body{
     margin-right: 12px;
     margin-top: 4px;
 }
+.sidebar .logout{
+    margin-top: 100%;
+    margin-left: 10px;
+}
+.logout a{
+    color: white;
+}
 .side-link a{
     text-decoration: none;
     color: white;
@@ -362,7 +369,7 @@ body{
 }
 @media only screen and (max-width:700px){
     .dashboard-main{
-        width: 100vw;
+        width: 100%;
     }
     .dashboard-content{
         width: 100%;
@@ -387,15 +394,16 @@ body{
     .content h5{
         margin: auto;
     }
-    .boxes .box{
-        margin-left: 10px;
-        width: 40%;
-    }
+    
     .upnav{
         display: none;
     }
     .content{
         width: 100%;
+    }
+    .boxes .box{
+        margin-left: 10px;
+        width: 97%;
     }
     .box .stats{
         font-size: 2.2em !important;
@@ -406,8 +414,7 @@ body{
     .boxes{
         width: 100%;
         flex-wrap: wrap;
-        /* display: flex; */
-        /* flex-direction: column; */
+        display: flex; 
     }
     .box i{
         margin: auto 10px;
@@ -434,4 +441,15 @@ body{
         width: 100%;
     }
 
+}
+@media only screen and (min-width:700px){
+    .side-link a{
+        font-size: 1em;
+    }
+    .links{
+        margin-left: 0px !important;
+    }
+    .side-link i{
+        margin-left: 0px;
+    }
 }

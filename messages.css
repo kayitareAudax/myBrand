@@ -14,6 +14,13 @@
 .create-main{
     width: 100%;
 }
+.sidebar .logout{
+    margin-top: 100%;
+    margin-left: 10px;
+}
+.logout a{
+    color: white;
+}
 .sidebar{
     width: 15%;
     background-color: var(--secondColor);

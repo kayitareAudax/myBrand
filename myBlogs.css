@@ -11,6 +11,13 @@
     box-sizing: border-box;
     font-family: poppins;
 }
+.sidebar .logout{
+    margin-top: 100%;
+    margin-left: 10px;
+}
+.logout a{
+    color: white;
+}
 .mine-main{
     display: flex;
     flex-direction: column;

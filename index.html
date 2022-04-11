@@ -18,12 +18,12 @@
             <img src="./images/me.JPG" alt="">
             <p class="myName">Kayitare Audax</p>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">skills</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Services</a></li>
+                <li><a href="#resume">skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <div class="login">
                     <a href="./login.html">Login</a>
@@ -36,12 +36,13 @@
                 <span><i class="fab fa-github"></i></span>
             </div>
             <div class="menu">
-                <i class="fas fa-bars"></i>
+                <label for="bar" class="label"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="bar" class="checkbox">
             </div>
         </div>
     </div>
     <div class="whole-content">
-        <div class="home">
+        <div class="home" id="home">
     <div class="banner">
     <div class="main-home">
         <h1 class="welcome">Welcome</h1>
@@ -74,7 +75,7 @@
     <img src="./images/me.JPG" alt="">
 </div>
 </div>
-<div class="about-main">
+<div class="about-main" id="about">
     <div class="header">
         <h1>Know Me More</h1>
         <div class="underline"></div>
@@ -138,6 +139,20 @@
             </div>
             <div class="divider"></div>
         </div>
+        <div class="exp">
+            <div class="text">
+                <h2>250+</h2>
+            <h4>Happy clients</h4>
+            </div>
+            <div class="divider"></div>
+        </div>
+        <div class="exp">
+            <div class="text">
+                <h2>250+</h2>
+            <h4>Happy clients</h4>
+            </div>
+            <div class="divider"></div>
+        </div>
         <!-- <div class="exp">
             <div class="text">
                 <h2>10+</h2>
@@ -154,7 +169,7 @@
         </div> -->
     </div>
 </div>
-<div class="skills-page">
+<div class="skills-page" id="skills">
     <div class="header">
         <h1>What I do</h1>
         <div class="underline"></div>
@@ -193,7 +208,7 @@
                     ad mea essent possim iriure.ad mea essent possim iriure.</p>
             </div>
         </div>
-        <div class="service">
+        <div class="service" id="service">
             <div class="icon">
                 <i class="fas fa-paint-brush"></i>
             </div>
@@ -228,7 +243,7 @@
         </div>
     </div>
 </div>
-<div class="resume">
+<div class="resume" id="resume">
     <div class="header">
         <h1>Resume</h1>
         <div class="underline"></div>
@@ -346,7 +361,7 @@
 </div>
 
 </div>
-<div class="portfolio">
+<div class="portfolio" id="portfolio">
     <div class="header">
         <h1>Portfolio</h1>
         <div class="underline"></div>
@@ -441,7 +456,7 @@
             </div>
     </div>
 </div>
-<div class="contact-page">
+<div class="contact-page" id="contact">
     <div class="header">
         <h1>Get In Touch</h1>
         <div class="underline"></div>
