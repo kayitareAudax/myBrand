@@ -541,7 +541,7 @@ ul li a:hover{
     border-radius: 30px;
 }
 .progressing{
-    width: 50%;
+    width: 100%;
     background-color: var(--mainColor);
     border-radius: 30px;
     height: 100%;
